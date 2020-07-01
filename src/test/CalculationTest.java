@@ -3,6 +3,7 @@ package test;
 
 import org.junit.*;
 import project.logic.Calculation;
+import project.logic.UserDetails;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -31,7 +32,11 @@ public class CalculationTest {
     }
 
     //TODO : 1. Add test case for reverseWord function of Calculation (2 marks)
-
+    @Test
+    public void testreverseWord(){
+        System.out.println("Test Case ReverseWord");
+        assertEquals("pegec ", calculation.reverseWord("cegep"));
+    }
 
    
     @After
